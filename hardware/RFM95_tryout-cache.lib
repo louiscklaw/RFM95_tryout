@@ -1,0 +1,138 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Conn_01x02_Female
+#
+DEF Connector_Conn_01x02_Female J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x02_Female" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# my_solder_jumper_SolderJumper_2_Open_round
+#
+DEF my_solder_jumper_SolderJumper_2_Open_round JP 0 0 Y N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "my_solder_jumper_SolderJumper_2_Open_round" 0 -100 50 H V C CNN
+F2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+$ENDFPLIST
+DRAW
+A -10 0 40 901 -901 0 1 0 N -10 40 -10 -40
+A -10 0 40 901 -901 0 1 0 F -10 40 -10 -40
+A 10 0 40 -899 899 0 1 0 N 10 -40 10 40
+A 10 0 40 -899 899 0 1 0 F 10 -40 10 40
+P 2 0 1 0 -10 40 -10 -40 N
+P 2 0 1 0 10 40 10 -40 N
+X A 1 -150 0 100 R 50 50 1 1 P
+X B 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_+3V3
+#
+DEF power_+3V3 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3V3" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# taobao-c_C475,0603
+#
+DEF taobao-c_C475,0603 C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "taobao-c_C475,0603" 10 -80 50 H V L CNN
+F2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_0603*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# taobao-components_RFM95
+#
+DEF taobao-components_RFM95 U 0 40 Y Y 1 F N
+F0 "U" 0 -950 50 H V C CNN
+F1 "taobao-components_RFM95" 0 -1050 50 H V C CNN
+F2 "footprint-lib:RFM95" 0 -1100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -750 950 1100 -600 0 1 0 f
+X GND 1 -950 -300 200 R 50 50 1 1 W
+X GND 10 -950 -500 200 R 50 50 1 1 W
+X DIO3 11 1300 450 200 L 50 50 1 1 B
+X DIO4 12 1300 350 200 L 50 50 1 1 B
+X 3V3 13 -950 750 200 R 50 50 1 1 W
+X DIO0 14 1300 750 200 L 50 50 1 1 B
+X DIO1 15 1300 650 200 L 50 50 1 1 B
+X DIO2 16 1300 550 200 L 50 50 1 1 B
+X MISO 2 1300 -100 200 L 50 50 1 1 I
+X MOSI 3 1300 -200 200 L 50 50 1 1 O
+X SCK 4 1300 -300 200 L 50 50 1 1 I
+X NSS 5 1300 -400 200 L 50 50 1 1 I
+X ~RESET~ 6 -950 650 200 R 50 50 1 1 B
+X DIO5 7 1300 250 200 L 50 50 1 1 B
+X GND 8 -950 -400 200 R 50 50 1 1 W
+X ANT 9 -950 0 200 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# taobao-r_R103,0603
+#
+DEF taobao-r_R103,0603 R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "taobao-r_R103,0603" 30 -40 50 H V L CNN
+F2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Resistor_SMD:R_0603*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
